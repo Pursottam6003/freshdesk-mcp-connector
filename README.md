@@ -1,5 +1,3 @@
-Below is the revised `README.md`. I kept the implementation-specific details from your current README, removed the accidental Google Forms link, made the opening evaluator-focused, replaced the broken Google-search TOC links with local anchors, and softened claims that were unnecessarily strong.
-
 # Freshdesk MCP Connector
 
 A focused, read-only **Model Context Protocol (MCP) connector for Freshdesk**, built with Java 17 and Spring Boot 3.3.5.
