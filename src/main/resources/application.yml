@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  address: 127.0.0.1
+
+spring:
+  application:
+    name: freshdesk-connector
+
+freshdesk:
+  domain: ${FRESHDESK_DOMAIN:mock}
+  api-key: ${FRESHDESK_API_KEY:mock-key}
+  base-url: ${FRESHDESK_BASE_URL:}
+  connect-timeout-ms: 5000
+  read-timeout-ms: 10000
+  retry:
+    max-attempts: 3
+    base-backoff-ms: 500
+    max-backoff-ms: 8000
+    max-wait-seconds: 30
+  listing:
+    max-pages-per-call: 5
+  conversations:
+    allow-private-notes: ${FRESHDESK_ALLOW_PRIVATE_NOTES:false}
+    max-pages: 5
+    max-body-length: 2000

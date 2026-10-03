@@ -1,0 +1,6 @@
+freshdesk:
+  domain: mock
+  api-key: mock-key
+  base-url: http://localhost:8080/mock-freshdesk
+  conversations:
+    allow-private-notes: false

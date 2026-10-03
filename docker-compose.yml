@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  freshdesk-connector:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=mock
+      - SERVER_ADDRESS=0.0.0.0
+      - FRESHDESK_DOMAIN=mock
+      - FRESHDESK_API_KEY=mock-key
+      - FRESHDESK_ALLOW_PRIVATE_NOTES=false
+    restart: unless-stopped
