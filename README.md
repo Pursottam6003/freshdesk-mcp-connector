@@ -1,5 +1,6 @@
 # Freshdesk MCP Connector
 
+![/mcpconnector.png](/mcpconnector.png)
 A focused, read-only **Model Context Protocol (MCP) connector for Freshdesk**, built with Java 17 and Spring Boot 3.3.5.
 
 The connector exposes Freshdesk ticket operations as MCP tools over stateless JSON-RPC 2.0 HTTP, allowing an AI agent to search, list, inspect, and retrieve ticket conversations while enforcing bounded retrieval, rate-limit handling, and private-note controls.
